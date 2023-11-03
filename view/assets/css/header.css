@@ -7,10 +7,6 @@
   --background-txt: linear-gradient(to right bottom, #ff8f26, #ff5117);
 }
 
-* {
-  font-size: 14px;
-}
-
 header {
   background-color: var(--background-color);
   border-bottom: 1px solid var(--border-bottom);
@@ -19,6 +15,7 @@ header {
   position: sticky;
   top: 0;
   z-index: 2;
+  font-size: 14px;
 }
 
 .row.wrap-header {

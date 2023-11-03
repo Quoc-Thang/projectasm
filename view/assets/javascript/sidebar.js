@@ -6,7 +6,7 @@ newsPost = () => {
     model.style.display = "block";
     model.style.transform = "translate3d(26.4px, 62.4px, 0px)";
   } else {
-    // model.style.transform = "translate3d(26.4px, 0, 0)";
+    model.style.transform = "translate3d(26.4px, 0px, 0px)";
     model.style.display = "none";
   }
 

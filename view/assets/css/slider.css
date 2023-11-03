@@ -150,13 +150,14 @@
 
 .heading-slide {
   margin-bottom: 28px;
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 700;
   color: var(--background-color);
   display: block;
 }
 
 .text-slide {
+  font-size: 14px;
   margin-bottom: 28px;
   display: block;
 }

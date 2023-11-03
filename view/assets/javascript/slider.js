@@ -44,3 +44,12 @@ function updateSlider() {
 
 // Initial update
 updateSlider();
+
+function autoSlide() {
+  setInterval(() => {
+    nextButton.click();
+  }, 5000);
+}
+
+// Auto Slide
+autoSlide();
