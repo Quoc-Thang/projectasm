@@ -12,10 +12,13 @@
 aside {
   background: var(--background-color);
   padding: 0 8px;
-  position: sticky;
   width: auto;
   float: left;
   height: 100vh;
+  position: sticky;
+  top: 0;
+  transition: all 0.3s ease-in-out;
+  z-index: 1;
 }
 
 .sidebar {
@@ -51,7 +54,6 @@ aside {
   height: 44px;
   width: 44px;
   display: flex;
-  align-content: center;
   align-items: center;
   justify-content: center;
 }
@@ -71,6 +73,7 @@ aside {
 
 #model-news {
   position: absolute;
+  z-index: 1;
   left: 0;
   top: 0;
   background: var(--background-color);
@@ -118,7 +121,7 @@ aside {
   font-weight: 500;
 }
 
-.sidebar ul li a:hover {
+.sidebar ul li a:not(.active):hover {
   background-color: var(--background-hover);
 }
 

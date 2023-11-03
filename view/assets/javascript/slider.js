@@ -35,9 +35,9 @@ function updateSlider() {
   // Update page buttons
   pageButtons.forEach((button, index) => {
     if (index === slideIndex) {
-      button.classList.add("active");
+      button.classList.add("activeShow");
     } else {
-      button.classList.remove("active");
+      button.classList.remove("activeShow");
     }
   });
 }
