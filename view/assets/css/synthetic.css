@@ -6,13 +6,22 @@
 
 html,
 body {
-  min-height: 100% o !important;
+  min-height: 100% !important;
   height: 100%;
 }
 
 body {
   font-family: var(--system-ui);
   scroll-behavior: smooth;
+}
+
+article {
+  display: flex;
+  min-width: 100vh;
+}
+
+#wrapper {
+  width: 100%;
 }
 
 /* width */
@@ -42,6 +51,7 @@ ul {
   margin: 0;
   padding: 0;
 }
+
 a {
   text-decoration: none;
 }
