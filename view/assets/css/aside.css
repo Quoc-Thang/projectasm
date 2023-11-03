@@ -109,6 +109,10 @@ aside {
   gap: 6px;
 }
 
+.sidebar > ul li {
+  font-size: 18px;
+}
+
 .sidebar ul li a {
   display: flex;
   flex-direction: column;
