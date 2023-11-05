@@ -48,7 +48,7 @@ updateSlider();
 function autoSlide() {
   setInterval(() => {
     nextButton.click();
-  }, 5000);
+  }, 3000);
 }
 
 // Auto Slide
