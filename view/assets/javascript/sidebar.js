@@ -12,3 +12,18 @@ newsPost = () => {
 
   rotate.classList.toggle("diagonal");
 };
+
+function activeMenu() {
+  const menu = document.querySelectorAll(".menu-sidebar");
+
+  for (let i = 0; i < menu.length; i++) {
+    let item = menu[i];
+    item.addEventListener("click", function () {
+      if (item.classList.contains("active") == true) {
+        item.classList.remove("active");
+      } else {
+        item.classList.add("active");
+      }
+    });
+  }
+}
