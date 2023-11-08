@@ -1,4 +1,4 @@
-newsPost = () => {
+fnewsPost = () => {
   const rotate = document.getElementById("rotate");
   const model = document.getElementById("model-news");
 
