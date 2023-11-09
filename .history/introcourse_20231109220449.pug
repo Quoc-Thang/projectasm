@@ -1,0 +1,200 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport', content='width=device-width, initial-scale=1.0')
+  title F8 - H&#x1ECD;c l&#x1EAD;p tr&igrave;nh &dstrok;&#x1EC3; &dstrok;i l&agrave;m
+  // Preconnect
+  link(rel='preconnect', href='https://unpkg.com/aos@2.3.1')
+  link(rel='preconnect', href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.2')
+  link(rel='preconnect', href='https://kit.fontawesome.com')
+  link(rel='preconnect', href='https://fonts.googleapis.com')
+  link(rel='preconnect', href='https://fonts.gstatic.com', crossorigin='')
+  // AOS
+  link(href='https://unpkg.com/aos@2.3.1/dist/aos.css', rel='stylesheet')
+  // Bootstrap
+  link(href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css', rel='stylesheet', integrity='sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN', crossorigin='anonymous')
+  // Google Fonts
+  link(href='https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&family=Roboto:wght@100;300;400&display=swap', rel='stylesheet')
+  // CSS
+  link(rel='stylesheet', href='./view/assets/css/reset.css')
+  link(rel='stylesheet', href='./view/assets/css/synthetic.css')
+  link(rel='stylesheet', href='./view/assets/css/header.css')
+  link(rel='stylesheet', href='./view/assets/css/aside.css')
+  link(rel='stylesheet', href='./view/assets/css/slider.css')
+  link(rel='stylesheet', href='./view/assets/css/wrappercontent.css')
+  link(rel='stylesheet', href='./view/assets/css/footer.css')
+
+  body
+            // Content
+            #wrapper
+            // Header
+            header
+                .row.wrap-header
+                // Logo Website
+                .col-4
+                    .logo
+                    a(href='/')
+                        img(src='./view/assets/image/Logo.png', alt='Logo Website')
+                    h4.logoTxt Học lập trình để đi làm
+                // Search
+                .col-4
+                    .form-search
+                    form(action='', method='post')
+                        .form
+                        button(type='submit')
+                            i.fa-solid.fa-magnifying-glass
+                        input(type='text', placeholder='Tìm kiếm khóa học, bài viết, video, ...', name='searchTxt')
+                // Account
+                .col-4
+                    .account
+                    .login
+                        a(href='#')  &Dstrok;&abreve;ng nh&#x1EAD;p 
+                    .signup
+                        a(href='#')  &Dstrok;&abreve;ng k&yacute; 
+            main#main-content
+                // Sidebar
+                aside
+                .sidebar
+                    #news-post(onclick='newsPost()')
+                    a#rotate(href='javascript:void(0)')
+                        i.fa-solid.fa-plus
+                    span#model-news Th&ecirc;m tin t&#x1EE9;c m&#x1EDB;i
+                    ul
+                    li
+                        a.menu-sidebar.active(href='#')
+                        i.fa-solid.fa-house
+                        span.txt-menu  Trang chủ
+                    li
+                        a.menu-sidebar(href='#')
+                        i.fa-solid.fa-road
+                        span.txt-menu  L&#x1ED9; tr&igrave;nh 
+                    li
+                        a.menu-sidebar(href='#')
+                        i.fa-solid.fa-newspaper
+                        span.txt-menu  B&agrave;i vi&#x1EBF;t 
+                    li
+                        a.menu-sidebar(href='#')
+                        i.fa-solid.fa-laptop-code
+                        span.txt-menu  H&#x1ECF;i &dstrok;&aacute;p 
+                // Article
+                article#main
+                // Wrapper Content Main
+                .wrapper-content
+            // Footer
+            footer
+                .content-footer
+                // Footer top
+                .footer-top
+                    // Slogan
+                    .slogan.content-column-footer
+                    .footer-slogan.title-footer
+                        figure
+                        img(src='./view/assets/image/Logo.png', alt='Logo Website')
+                        figcaption
+                        span.txt-slogan  Học lập trình để đi làm
+                    .footer-contact-list
+                        ul
+                        li
+                            p Điện thoại:
+                        li
+                            p Email:
+                        li
+                            p
+                            | Số 11D, lô A10, khu đô thị Nam Trung Yên, phường Yên Hòa,
+                            | quận Cầu giấy, TP.Hà Nội
+                    .footer-protect
+                        figure
+                        a(href='#')
+                            img(src='./view/assets/image/dmca.png', alt='DMCA Protect')
+                    // About us
+                    .about.content-column-footer
+                    .title-footer.about-us
+                        span Về chúng tôi
+                    nav.list-about
+                        ul
+                        li
+                            a(href='#') Giới thiệu
+                        li
+                            a(href='#') Liên hệ
+                        li
+                            a(href='#') Điều khoản
+                        li
+                            a(href='#') Bảo mật
+                        li
+                            a(href='#') Cơ hội việc làm
+                    // Products
+                    .product.content-column-footer
+                    .title-footer.product-type
+                        span Sản phẩm
+                    nav.list-product
+                        ul
+                        li
+                            a(href='#') Game Nester
+                        li
+                            a(href='#') Game CSS Diner
+                        li
+                            a(href='#') Game CSS Selectors
+                        li
+                            a(href='#') Game Froggy
+                        li
+                            a(href='#') Game Froggy Pro
+                        li
+                            a(href='#') Game Scoops
+                    // Tools
+                    .tools.content-column-footer
+                    .title-footer.tools-type
+                        span Tin tức - Blog
+                    nav.list-tools
+                        ul
+                        li
+                            a(href='#') Tạo CV xin việc
+                        li
+                            a(href='#') Rút gọn liên kết
+                        li
+                            a(href='#') Clip-path marker
+                        li
+                            a(href='#') Snippets generator
+                        li
+                            a(href='#') CSS Grid generator
+                        li
+                            a(href='#') Cảnh báo sờ tay lên mặt
+                    // Company
+                    .company.content-column-footer
+                    .title-footer.company-type
+                        span Công ty cổ phần công nghệ giáo dục F8
+                    nav.list-company
+                        ul
+                        li
+                            p(href='#')
+                            | Mã số thuế:
+                            span 0109922901
+                        li
+                            p(href='#')
+                            | Ngày thành lập:
+                            span 04/03/2022
+                        li
+                            p(href='#')
+                            | Lĩnh vực:
+                            span
+                                | Công nghệ, giáo dục, lập trình. F8 xây dựng và phát triển những
+                                | sản phẩm mang lại gia giá trị cho côngj đồng
+                // Footer bottom
+                .footer-bottom
+                    .copyright
+                    p &copy; 2018 - 2023 F8. Nền tảng học lập trình hàng đầu Việt Nam
+                    .social-media
+                    img(src='/images/icons/facebook.svg', alt='')
+                    img(src='/images/icons/instagram.svg', alt='')
+                    img(src='/images/icons/twitter.svg', alt='')
+                    img(src='/images/icons/linkedin.svg', alt='')
+            // Javascript
+            script(src='./view/assets/javascript/sidebar.js')
+            script(src='./view/assets/javascript/slider.js')
+            // Font Awesome
+            script(src='https://kit.fontawesome.com/3e006365dd.js', crossorigin='anonymous')
+            // Bootstrap
+            script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js', integrity='sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL', crossorigin='anonymous')
+            // AOS
+            script(src='https://unpkg.com/aos@2.3.1/dist/aos.js')
+            script.
+            AOS.init();

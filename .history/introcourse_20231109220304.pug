@@ -1,0 +1,483 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport', content='width=device-width, initial-scale=1.0')
+  title F8 - H&#x1ECD;c l&#x1EAD;p tr&igrave;nh &dstrok;&#x1EC3; &dstrok;i l&agrave;m
+  // Preconnect
+  link(rel='preconnect', href='https://unpkg.com/aos@2.3.1')
+  link(rel='preconnect', href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.2')
+  link(rel='preconnect', href='https://kit.fontawesome.com')
+  link(rel='preconnect', href='https://fonts.googleapis.com')
+  link(rel='preconnect', href='https://fonts.gstatic.com', crossorigin='')
+  // AOS
+  link(href='https://unpkg.com/aos@2.3.1/dist/aos.css', rel='stylesheet')
+  // Bootstrap
+  link(href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css', rel='stylesheet', integrity='sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN', crossorigin='anonymous')
+  // Google Fonts
+  link(href='https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&family=Roboto:wght@100;300;400&display=swap', rel='stylesheet')
+  // CSS
+  link(rel='stylesheet', href='./view/assets/css/reset.css')
+  link(rel='stylesheet', href='./view/assets/css/synthetic.css')
+  link(rel='stylesheet', href='./view/assets/css/header.css')
+  link(rel='stylesheet', href='./view/assets/css/aside.css')
+  link(rel='stylesheet', href='./view/assets/css/slider.css')
+  link(rel='stylesheet', href='./view/assets/css/wrappercontent.css')
+  link(rel='stylesheet', href='./view/assets/css/footer.css')
+
+  body
+            // Content
+            #wrapper
+            // Header
+            header
+                .row.wrap-header
+                // Logo Website
+                .col-4
+                    .logo
+                    a(href='/')
+                        img(src='./view/assets/image/Logo.png', alt='Logo Website')
+                    h4.logoTxt Học lập trình để đi làm
+                // Search
+                .col-4
+                    .form-search
+                    form(action='', method='post')
+                        .form
+                        button(type='submit')
+                            i.fa-solid.fa-magnifying-glass
+                        input(type='text', placeholder='Tìm kiếm khóa học, bài viết, video, ...', name='searchTxt')
+                // Account
+                .col-4
+                    .account
+                    .login
+                        a(href='#')  &Dstrok;&abreve;ng nh&#x1EAD;p 
+                    .signup
+                        a(href='#')  &Dstrok;&abreve;ng k&yacute; 
+            main#main-content
+                // Sidebar
+                aside
+                .sidebar
+                    #news-post(onclick='newsPost()')
+                    a#rotate(href='javascript:void(0)')
+                        i.fa-solid.fa-plus
+                    span#model-news Th&ecirc;m tin t&#x1EE9;c m&#x1EDB;i
+                    ul
+                    li
+                        a.menu-sidebar.active(href='#')
+                        i.fa-solid.fa-house
+                        span.txt-menu  Trang ch&#x1EE7; 
+                    li
+                        a.menu-sidebar(href='#')
+                        i.fa-solid.fa-road
+                        span.txt-menu  L&#x1ED9; tr&igrave;nh 
+                    li
+                        a.menu-sidebar(href='#')
+                        i.fa-solid.fa-newspaper
+                        span.txt-menu  B&agrave;i vi&#x1EBF;t 
+                    li
+                        a.menu-sidebar(href='#')
+                        i.fa-solid.fa-laptop-code
+                        span.txt-menu  H&#x1ECF;i &dstrok;&aacute;p 
+                // Article
+                article#main
+                // Slider
+                section#slide-content
+                    .slider-container
+                    .slider-wrapper
+                        .slider-main
+                        .slider
+                            .slide.slide1
+                            .slide-left
+                                .slide-titles
+                                h2.title-slide
+                                    a.heading-slide(href='#') Học HTML, CSS dành cho người mới
+                                span.text-slide
+                                    | Th&#x1EF1;c h&agrave;nh d&#x1EF1; &aacute;n v&#x1EDB;i Figma, h&agrave;ng tr&abreve;m b&agrave;i t&#x1EAD;p v&agrave; th&#x1EED;
+                                    | th&aacute;ch, h&#x1B0;&#x1EDB;ng d&#x1EAB;n 100% b&#x1EDF;i S&#x1A1;n &Dstrok;&#x1EB7;ng, t&#x1EB7;ng k&egrave;m
+                                    | Flashcards, v.v.
+                                .slide-links
+                                a.link-slide(href='#')  H&#x1ECD;c th&#x1EED; mi&#x1EC5;n ph&iacute; 
+                            .slide-right
+                                img(src='./view/assets/image/slide1.png', alt='Image Slideshow')
+                            .slide.slide2
+                            .slide-left
+                                .slide-titles
+                                h2.title-slide H&#x1ECD;c ReactJS mi&#x1EC5;n ph&iacute;
+                                .slide-txt
+                                span.text-slide
+                                    | Kh&oacute;a h&#x1ECD;c ReactJS t&#x1EEB; c&#x1A1; b&#x1EA3;n t&#x1EDB;i n&acirc;ng cao. K&#x1EBF;t qu&#x1EA3;
+                                    | c&#x1EE7;a kh&oacute;a h&#x1ECD;c n&agrave;y l&agrave; b&#x1EA1;n c&oacute; th&#x1EC3; l&agrave;m h&#x1EA7;u h&#x1EBF;t c&aacute;c d&#x1EF1; &aacute;n
+                                    | th&#x1B0;&#x1EDD;ng g&#x1EB7;p v&#x1EDB;i ReactJS.
+                                .slide-links
+                                a.link-slide(href='#')  &Dstrok;&abreve;ng k&yacute; ngay 
+                            .slide-right
+                                img(src='./view/assets/image/slide2.png', alt='Image Slideshow')
+                            .slide.slide3
+                            .slide-left
+                                .slide-titles
+                                h2.title-slide Th&agrave;nh qu&#x1EA3; c&#x1EE7;a h&#x1ECD;c vi&ecirc;n
+                                .slide-txt
+                                span.text-slide
+                                    | &Dstrok;&#x1EC3; &dstrok;&#x1EA1;t &dstrok;&#x1B0;&#x1EE3;c k&#x1EBF;t qu&#x1EA3; t&#x1ED1;t trong m&#x1ECD;i vi&#x1EC7;c ta c&#x1EA7;n x&aacute;c
+                                    | &dstrok;&#x1ECB;nh m&#x1EE5;c ti&ecirc;u r&otilde; r&agrave;ng cho vi&#x1EC7;c &dstrok;&oacute;. H&#x1ECD;c l&#x1EAD;p tr&igrave;nh
+                                    | c&utilde;ng kh&ocirc;ng l&agrave; ngo&#x1EA1;i l&#x1EC7;.
+                                .slide-links
+                                a.link-slide(href='#')  H&#x1ECD;c th&#x1EED; mi&#x1EC5;n ph&iacute; 
+                            .slide-right
+                                img(src='./view/assets/image/slide3.png', alt='Image Slideshow')
+                            .slide.slide4
+                            .slide-left
+                                .slide-titles
+                                h2.title-slide F8 Tr&ecirc;n Youtube
+                                .slide-txt
+                                span.text-slide
+                                    | F8 &dstrok;&#x1B0;&#x1EE3;c nh&#x1EAF;c t&#x1EDB;i &#x1EDF; m&#x1ECD;i n&#x1A1;i, &#x1EDF; &dstrok;&acirc;u c&oacute; c&#x1A1; h&#x1ED9;i vi&#x1EC7;c
+                                    | l&agrave;m cho ngh&#x1EC1; IT v&agrave; c&oacute; nh&#x1EEF;ng con ng&#x1B0;&#x1EDD;i y&ecirc;u th&iacute;ch l&#x1EAD;p
+                                    | tr&igrave;nh F8 s&#x1EBD; &#x1EDF; &dstrok;&oacute;.
+                                .slide-links
+                                a.link-slide(href='#')  Truy c&#x1EAD;p k&ecirc;nh 
+                            .slide-right
+                                img(src='./view/assets/image/slide4.png', alt='Image Slideshow')
+                            .slide.slide5
+                            .slide-left
+                                .slide-titles
+                                h2.title-slide F8 Tr&ecirc;n Facebook
+                                .slide-txt
+                                span.text-slide
+                                    | F8 &dstrok;&#x1B0;&#x1EE3;c nh&#x1EAF;c t&#x1EDB;i &#x1EDF; m&#x1ECD;i n&#x1A1;i, &#x1EDF; &dstrok;&acirc;u c&oacute; c&#x1A1; h&#x1ED9;i vi&#x1EC7;c l&agrave;m
+                                    | cho ngh&#x1EC1; IT v&agrave; c&oacute; nh&#x1EEF;ng con ng&#x1B0;&#x1EDD;i y&ecirc;u th&iacute;ch l&#x1EAD;p
+                                    | tr&igrave;nh F8 s&#x1EBD; &#x1EDF; &dstrok;&oacute;.
+                                .slide-links
+                                a.link-slide(href='#')  Truy C&#x1EAD;p Facebook 
+                            .slide-right
+                                img(src='./view/assets/image/slide5.png', alt='Image Slideshow')
+                        span.control.prev
+                        i.fa-solid.fa-angle-left
+                        span.control.next
+                        i.fa-solid.fa-angle-right
+                        .pagination
+                        button.page-button
+                        button.page-button
+                        button.page-button
+                        button.page-button
+                        button.page-button
+                // Wrapper Content Main
+                .wrapper-content
+                    // Pro  Course
+                    section.pro-courses
+                    .title-heading-pro-course.title-heading
+                        h2
+                        | Kh&oacute;a h&#x1ECD;c Pro 
+                        sup  M&#x1EDB;i 
+                    .list-items
+                        .item-course
+                        figure.course-item
+                            img(src='./view/assets/image/htmlcsspro.png', alt='HTML, CSS Pro')
+                            figcaption
+                            .img-pro-course
+                                img(src='./view/assets/image/kingpro.svg', alt='Fee Course')
+                            .des-course-item
+                                a.view-course(href='#')  Xem kh&oacute;a h&#x1ECD;c 
+                        a.title-course(href='#') HTML, CSS Pro
+                        span.price-course
+                            del 2.500.000&dstrok;
+                            |  1.299.000&dstrok;
+                        .item-course
+                        figure.course-item
+                            img(src='./view/assets/image/sass.png', alt='HTML, CSS Pro')
+                            figcaption
+                            .img-pro-course
+                                img(src='./view/assets/image/kingpro.svg', alt='Fee Course')
+                            .des-course-item
+                                a.view-course(href='#')  Xem kh&oacute;a h&#x1ECD;c 
+                        a.title-course(href='#') Ng&ocirc;n ng&#x1EEF; ti&#x1EC1;n x&#x1EED; l&yacute; Sass
+                        span.price-course
+                            del 400.000&dstrok;
+                            |  299.000&dstrok;
+                        .item-course
+                        figure.course-item
+                            img(src='./view/assets/image/javascriptpro.png', alt='HTML, CSS Pro')
+                            figcaption
+                            .img-pro-course
+                                img(src='./view/assets/image/kingpro.svg', alt='Fee Course')
+                            .des-course-item
+                                a.view-course(href='#')  Xem kh&oacute;a h&#x1ECD;c 
+                        a.title-course(href='#') Javascript Pro
+                        span.price-course
+                            del
+                        .item-course
+                        figure.course-item
+                            img(src='./view/assets/image/nextjspro.png', alt='HTML, CSS Pro')
+                            figcaption
+                            .img-pro-course
+                                img(src='./view/assets/image/kingpro.svg', alt='Fee Course')
+                            .des-course-item
+                                a.view-course(href='#')  Xem kh&oacute;a h&#x1ECD;c 
+                        a.title-course(href='#') NextJS Pro
+                        span.price-course
+                            del
+                    // Free Course
+                    section.free-courses
+                    p.count-viewer
+                        span.counter 362.253+
+                        |  ng&#x1B0;&#x1EDD;i kh&aacute;c &dstrok;&atilde; h&#x1ECD;c
+                    .title-heading-free-course.title-heading
+                        h2 Kh&oacute;a h&#x1ECD;c mi&#x1EC5;n ph&iacute;
+                        .read-more
+                        a.read-all(href='#')
+                            | Xem l&#x1ED9; tr&igrave;nh
+                            i.fa.fa-angle-right
+                    .list-items
+                        .item-course
+                        figure.course-item
+                            img(src='./view/assets/image/kienthucnentang.png', alt='HTML, CSS Pro')
+                            figcaption
+                            .des-course-item
+                                a.view-course(href='#')  Xem kh&oacute;a h&#x1ECD;c 
+                        a.title-course(href='#') Ki&#x1EBF;n th&#x1EE9;c nh&#x1EAD;p m&ocirc;n IT
+                        span.viewer
+                            i.fa-solid.fa-users
+                            |  119.557
+                        .item-course
+                        figure.course-item
+                            img(src='./view/assets/image/cppcobannangcao.png', alt='HTML, CSS Pro')
+                            figcaption
+                            .des-course-item
+                                a.view-course(href='#')  Xem kh&oacute;a h&#x1ECD;c 
+                        a.title-course(href='#') L&#x1EAD;p tr&igrave;nh C++ c&#x1A1; b&#x1EA3;n, n&acirc;ng cao
+                        span.viewer
+                            i.fa-solid.fa-users
+                            |  19.280
+                        .item-course
+                        figure.course-item
+                            img(src='./view/assets/image/htmlcsszerohero.png', alt='HTML, CSS Pro')
+                            figcaption
+                            .des-course-item
+                                a.view-course(href='#')  Xem kh&oacute;a h&#x1ECD;c 
+                        a.title-course(href='#') HTML, CSS t&#x1EEB; Zero &dstrok;&#x1EBF;n Hero
+                        span.viewer
+                            i.fa-solid.fa-users
+                            |  179.257
+                        .item-course
+                        figure.course-item
+                            img(src='./view/assets/image/responsivegridsystem.png', alt='HTML, CSS Pro')
+                            figcaption
+                            .des-course-item
+                                a.view-course(href='#')  Xem kh&oacute;a h&#x1ECD;c 
+                        a.title-course(href='#') Responsive v&#x1EDB;i Grid System
+                        span.viewer
+                            i.fa-solid.fa-users
+                            |  40.685
+                        .item-course
+                        figure.course-item
+                            img(src='./view/assets/image/javascriptcoban.png', alt='HTML, CSS Pro')
+                            figcaption
+                            .des-course-item
+                                a.view-course(href='#')  Xem kh&oacute;a h&#x1ECD;c 
+                        a.title-course(href='#') L&#x1EAD;p tr&igrave;nh Javascript c&#x1A1; b&#x1EA3;n
+                        span.viewer
+                            i.fa-solid.fa-users
+                            |  121.503
+                        .item-course
+                        figure.course-item
+                            img(src='./view/assets/image/javascirptnangcao.png', alt='HTML, CSS Pro')
+                            figcaption
+                            .des-course-item
+                                a.view-course(href='#')  Xem kh&oacute;a h&#x1ECD;c 
+                        a.title-course(href='#') L&#x1EAD;p tr&igrave;nh Javascript n&acirc;ng cao
+                        span.viewer
+                            i.fa-solid.fa-users
+                            |  33.034
+                        .item-course
+                        figure.course-item
+                            img(src='./view/assets/image/wslubuntu.png', alt='HTML, CSS Pro')
+                            figcaption
+                            .des-course-item
+                                a.view-course(href='#')  Xem kh&oacute;a h&#x1ECD;c 
+                        a.title-course(href='#') L&agrave;m vi&#x1EC7;c v&#x1EDB;i Terminal &amp; Ubuntu
+                        span.viewer
+                            i.fa-solid.fa-users
+                            |  15.260
+                        .item-course
+                        figure.course-item
+                            img(src='./view/assets/image/reactjs.png', alt='HTML, CSS Pro')
+                            figcaption
+                            .des-course-item
+                                a.view-course(href='#')  Xem kh&oacute;a h&#x1ECD;c 
+                        a.title-course(href='#') X&acirc;y d&#x1EF1;ng Website v&#x1EDB;i ReactJS
+                        span.viewer
+                            i.fa-solid.fa-users
+                            |  56.038
+                        .item-course
+                        figure.course-item
+                            img(src='./view/assets/image/nodeexpressjs.png', alt='HTML, CSS Pro')
+                            figcaption
+                            .des-course-item
+                                a.view-course(href='#')  Xem kh&oacute;a h&#x1ECD;c 
+                        a.title-course(href='#') Node &amp; ExpressJS
+                        span.viewer
+                            i.fa-solid.fa-users
+                            |  37.311
+                        .item-course
+                        figure.course-item
+                            img(src='./view/assets/image/donttouchyourface.png', alt='HTML, CSS Pro')
+                            figcaption
+                            .des-course-item
+                                a.view-course(href='#')  Xem kh&oacute;a h&#x1ECD;c 
+                        a.title-course(href='#') App &quot;&Dstrok;&#x1EEB;ng ch&#x1EA1;m tay l&ecirc;n m&#x1EB7;t&quot;
+                        span.viewer
+                            i.fa-solid.fa-users
+                            |  8.781
+                    // Futured Article
+                    section.futured-article
+                    .title-heading-futered-article.title-heading
+                        h2 B&agrave;i vi&#x1EBF;t n&#x1ED5;i b&#x1EAD;t
+                        .read-more
+                        a.read-all(href='#')
+                            | Xem t&#x1EA5;t c&#x1EA3;
+                            i.fa.fa-angle-right
+                    .list-items
+                        .item-course
+                        figure.course-item
+                            img(src='./view/assets/image/futuredarticle1.png', alt='HTML, CSS Pro')
+                            figcaption
+                            .des-course-item
+                                a.view-course(href='#')  Xem b&agrave;i vi&#x1EBF;t 
+                        a.title-course(href='#') T&#x1ED5;ng h&#x1EE3;p c&aacute;c s&#x1EA3;n ph&#x1EA9;m c&#x1EE7;a h&#x1ECD;c vi&ecirc;n t&#x1EA1;i F8
+                        .author
+                            figure
+                            img(src='./view/assets/image/avatarauthor1.jpg', alt='Avatar Author')
+                            a.name-author(href='#')  S&#x1A1;n &Dstrok;&#x1EB7;ng 
+                            i.fa-solid.fa-check(style='color: #ffffff')
+                            figcaption
+                                span.time-read 6 ph&uacute;t &dstrok;&#x1ECD;c
+                        .item-course
+                        figure.course-item
+                            img(src='./view/assets/image/futuredarticle2.jpg', alt='HTML, CSS Pro')
+                            figcaption
+                            .des-course-item
+                                a.view-course(href='#')  Xem b&agrave;i vi&#x1EBF;t 
+                        a.title-course(href='#') [Ph&#x1EA7;n 1] T&#x1EA1;o d&#x1EF1; &aacute;n ReactJS v&#x1EDB;i Webpack v&agrave; Babel
+                        .author
+                            figure
+                            img(src='./view/assets/image/avatarauthor1.jpg', alt='Avatar Author')
+                            a.name-author(href='#')  S&#x1A1;n &Dstrok;&#x1EB7;ng 
+                            i.fa-solid.fa-check(style='color: #ffffff')
+                            figcaption
+                                span.time-read 12 ph&uacute;t &dstrok;&#x1ECD;c
+            // Footer
+            footer
+                .content-footer
+                // Footer top
+                .footer-top
+                    // Slogan
+                    .slogan.content-column-footer
+                    .footer-slogan.title-footer
+                        figure
+                        img(src='./view/assets/image/Logo.png', alt='Logo Website')
+                        figcaption
+                        span.txt-slogan  H&#x1ECD;c l&#x1EAD;p tr&igrave;nh &dstrok;&#x1EC3; &dstrok;i l&agrave;m 
+                    .footer-contact-list
+                        ul
+                        li
+                            p &Dstrok;i&#x1EC7;n tho&#x1EA1;i:
+                        li
+                            p Email:
+                        li
+                            p
+                            | Số 11D, lô A10, khu đô thị Nam Trung Yên, phường Yên Hòa,
+                            | quận Cầu giấy, TP.Hà Nội
+                    .footer-protect
+                        figure
+                        a(href='#')
+                            img(src='./view/assets/image/dmca.png', alt='DMCA Protect')
+                    // About us
+                    .about.content-column-footer
+                    .title-footer.about-us
+                        span Về chúng tôi
+                    nav.list-about
+                        ul
+                        li
+                            a(href='#') Giới thiệu
+                        li
+                            a(href='#') Liên hệ
+                        li
+                            a(href='#') Điều khoản
+                        li
+                            a(href='#') Bảo mật
+                        li
+                            a(href='#') Cơ hội việc làm
+                    // Products
+                    .product.content-column-footer
+                    .title-footer.product-type
+                        span Sản phẩm
+                    nav.list-product
+                        ul
+                        li
+                            a(href='#') Game Nester
+                        li
+                            a(href='#') Game CSS Diner
+                        li
+                            a(href='#') Game CSS Selectors
+                        li
+                            a(href='#') Game Froggy
+                        li
+                            a(href='#') Game Froggy Pro
+                        li
+                            a(href='#') Game Scoops
+                    // Tools
+                    .tools.content-column-footer
+                    .title-footer.tools-type
+                        span Tin tức - Blog
+                    nav.list-tools
+                        ul
+                        li
+                            a(href='#') Tạo CV xin việc
+                        li
+                            a(href='#') Rút gọn liên kết
+                        li
+                            a(href='#') Clip-path marker
+                        li
+                            a(href='#') Snippets generator
+                        li
+                            a(href='#') CSS Grid generator
+                        li
+                            a(href='#') Cảnh báo sờ tay lên mặt
+                    // Company
+                    .company.content-column-footer
+                    .title-footer.company-type
+                        span Công ty cổ phần công nghệ giáo dục F8
+                    nav.list-company
+                        ul
+                        li
+                            p(href='#')
+                            | Mã số thuế:
+                            span 0109922901
+                        li
+                            p(href='#')
+                            | Ngày thành lập:
+                            span 04/03/2022
+                        li
+                            p(href='#')
+                            | Lĩnh vực:
+                            span
+                                | Công nghệ, giáo dục, lập trình. F8 xây dựng và phát triển những
+                                | sản phẩm mang lại gia giá trị cho côngj đồng
+                // Footer bottom
+                .footer-bottom
+                    .copyright
+                    p &copy; 2018 - 2023 F8. Nền tảng học lập trình hàng đầu Việt Nam
+                    .social-media
+                    img(src='/images/icons/facebook.svg', alt='')
+                    img(src='/images/icons/instagram.svg', alt='')
+                    img(src='/images/icons/twitter.svg', alt='')
+                    img(src='/images/icons/linkedin.svg', alt='')
+            // Javascript
+            script(src='./view/assets/javascript/sidebar.js')
+            script(src='./view/assets/javascript/slider.js')
+            // Font Awesome
+            script(src='https://kit.fontawesome.com/3e006365dd.js', crossorigin='anonymous')
+            // Bootstrap
+            script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js', integrity='sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL', crossorigin='anonymous')
+            // AOS
+            script(src='https://unpkg.com/aos@2.3.1/dist/aos.js')
+            script.
+            AOS.init();
