@@ -1,0 +1,30 @@
+.intro-course {
+  display: flex;
+  flex-direction: row;
+}
+
+.content-course {
+  padding: 0 30px 0 0;
+  /* color: #000; */
+}
+
+.heading-course {
+}
+
+.title-heading-course {
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.desc-course {
+  font-size: 14px;
+}
+
+.main-content-course {
+}
+
+.content-course-top {
+}
+
+.list-panels-course {
+}

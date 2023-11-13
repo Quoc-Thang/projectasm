@@ -11,7 +11,7 @@ body {
 }
 
 body {
-  font-family: var(--system-ui);
+  font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
   overflow-x: hidden;
 }

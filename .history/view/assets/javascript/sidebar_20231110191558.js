@@ -2,9 +2,9 @@ newsPost = () => {
   const rotate = document.getElementById("rotate");
   const model = document.getElementById("model-news");
 
-  if (model.style.visibility === "hidden" || model.style.visibility === "") {
-    model.style.transform = "translate3d(26.4px, 62.4px, 0px)";
+  if (model.style.visibility === "hidden" || model.style.display === "") {
     model.style.visibility = "visible";
+    model.style.transform = "translate3d(26.4px, 62.4px, 0px)";
   } else {
     model.style.transform = "translate3d(26.4px, 0px, 0px)";
     model.style.visibility = "hidden";

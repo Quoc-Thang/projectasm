@@ -7,7 +7,7 @@ newsPost = () => {
     model.style.visibility = "visible";
   } else {
     model.style.transform = "translate3d(26.4px, 0px, 0px)";
-    model.style.visibility = "hidden";
+    // model.style.visibility = "hidden";
   }
 
   rotate.classList.toggle("diagonal");
