@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>F8 - Học lập trình để đi làm</title>
+    <!-- Preconnect -->
+    <link rel="preconnect" href="https://unpkg.com/aos@2.3.1" />
+    <link
+      rel="preconnect"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2" />
+    <link rel="preconnect" href="https://kit.fontawesome.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&family=Roboto:wght@100;300;400&display=swap"
+      rel="stylesheet" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./view/assets/css/reset.css" />
+    <link rel="stylesheet" href="./view/assets/css/synthetic.css" />
+    <link rel="stylesheet" href="./view/assets/css/header.css" />
+    <link rel="stylesheet" href="./view/assets/css/nav.css" />
+    <link rel="stylesheet" href="./view/assets/css/slider.css" />
+    <link rel="stylesheet" href="./view/assets/css/wrappercontent.css" />
+    <link rel="stylesheet" href="./view/assets/css/footer.css" />
+    <link rel="stylesheet" href="./view/assets/css/form-login.css">
+  </head>
+
+  <body>
+    <!-- Content -->
+    <div id="wrapper">
+      <!-- Header -->
+      <header>
+        <div class="row wrap-header">
+          <!-- Logo Website -->
+          <div class="col-4">
+            <div class="logo">
+              <a href="/">
+                <img src="./view/assets/image/Logo.png" alt="Logo Website" />
+              </a>
+              <h4 class="logoTxt">Học Lập Trình Để Đi Làm</h4>
+            </div>
+          </div>
+
+          <!-- Search -->
+          <div class="col-4">
+            <div class="form-search">
+              <form action="" method="post">
+                <div class="form">
+                  <button type="submit">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </button>
+                  <input
+                    type="search"
+                    placeholder="Tìm kiếm khóa học, bài viết, video, ..."
+                    name="searchTxt"
+                    id="search-input"
+                    />
+                </div>
+              </form>
+              <div class="card-search">
+                <div class="heading-card-search">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                  <span>Kết quả tìm kiếm cho:</span>
+                </div>
+                <div class="content-card-search">
+                  <div class="title-content">
+                    <h2>
+                      Khóa học
+                    </h2>
+                    <a href="#">
+                      Xem thêm
+                    </a>
+                  </div>
+                  <ul class="main-content" id="apiData">
+                    <li>
+                      <a href="#">
+                        <img src="./view/assets/image/htmlcsszerohero.png" alt="Image course">
+                        <span>
+                          HTML, CSS từ cơ bản đến nâng cao
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <img src="./view/assets/image/htmlcsspro.png" alt="Image course">
+                        <span>
+                          HTML, CSS Pro
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <img src="./view/assets/image/sass.png" alt="Image course">
+                        <span>
+                          Ngôn ngữ tiền xử lý sass
+                        </span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Account -->
+          <div class="col-4">
+            <div class="account">
+              <div class="login">
+                <a class="openLogin" href="#"> Đăng nhập </a>
+              </div>
+              <div class="signup">
+                <a href="#"> Đăng ký </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main id="main-content">
+        <!-- Sidebar -->
+        <nav class="menu-sidebar">
+          <div class="sidebar">
+            <div id="news-post" onclick="newsPost()">
+              <a id="rotate" href="javascript:void(0)">
+                <i class="fa-solid fa-plus"></i>
+              </a>
+              <span id="model-news">Thêm tin tức mới</span>
+            </div>
+            <ul>
+              <li>
+                <a class="menu-sidebar active" href="#">
+                  <i class="fa-solid fa-house"></i>
+                  <span class="txt-menu"> Trang chủ </span>
+                </a>
+              </li>
+              <li>
+                <a class="menu-sidebar" href="#">
+                  <i class="fa-solid fa-road"></i>
+                  <span class="txt-menu"> Lộ trình </span></a
+                >
+              </li>
+              <li>
+                <a class="menu-sidebar" href="#">
+                  <i class="fa-solid fa-newspaper"></i>
+                  <span class="txt-menu"> Bài viết </span></a
+                >
+              </li>
+              <li>
+                <a class="menu-sidebar" href="#">
+                  <i class="fa-solid fa-laptop-code"></i>
+                  <span class="txt-menu"> Hỏi đáp </span></a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <!-- Article -->
+        <article id="main">
+          <!-- Slider -->
+          <section id="slide-content">
+            <div class="slider-container">
+              <div class="slider-wrapper">
+                <div class="slider-main">
+                  <div class="slider">
+                    <div class="slide slide1">
+                      <div class="slide-left">
+                        <div class="slide-titles">
+                          <h2 class="title-slide">
+                            <a href="#" class="heading-slide">
+                              Học HTML, CSS dành cho người mới
+                            </a>
+                          </h2>
+                        </div>
+                        <div class="slide-txt">
+                          <span class="text-slide"
+                            >Thực hành dự án với Figma, hàng trăm bài tập và thử
+                            thách, hướng dẫn 100% bởi Sơn Đặng, tặng kèm
+                            Flashcards, v.v.</span
+                          >
+                        </div>
+                        <div class="slide-links">
+                          <a class="link-slide" href="#"> Học thử miễn phí </a>
+                        </div>
+                      </div>
+                      <div class="slide-right">
+                        <img
+                          src="./view/assets/image/slide1.png"
+                          alt="Image Slideshow" />
+                      </div>
+                    </div>
+                    <div class="slide slide2">
+                      <div class="slide-left">
+                        <div class="slide-titles">
+                          <h2 class="title-slide">Học ReactJS miễn phí</h2>
+                        </div>
+                        <div class="slide-txt">
+                          <span class="text-slide"
+                            >Khóa học ReactJS từ cơ bản tới nâng cao. Kết quả
+                            của khóa học này là bạn có thể làm hầu hết các dự án
+                            thường gặp với ReactJS.</span
+                          >
+                        </div>
+                        <div class="slide-links">
+                          <a class="link-slide" href="#"> Đăng ký ngay </a>
+                        </div>
+                      </div>
+                      <div class="slide-right">
+                        <img
+                          src="./view/assets/image/slide2.png"
+                          alt="Image Slideshow" />
+                      </div>
+                    </div>
+                    <div class="slide slide3">
+                      <div class="slide-left">
+                        <div class="slide-titles">
+                          <h2 class="title-slide">Thành quả của học viên</h2>
+                        </div>
+                        <div class="slide-txt">
+                          <span class="text-slide"
+                            >Để đạt được kết quả tốt trong mọi việc ta cần xác
+                            định mục tiêu rõ ràng cho việc đó. Học lập trình
+                            cũng không là ngoại lệ.</span
+                          >
+                        </div>
+                        <div class="slide-links">
+                          <a class="link-slide" href="#"> Học thử miễn phí </a>
+                        </div>
+                      </div>
+                      <div class="slide-right">
+                        <img
+                          src="./view/assets/image/slide3.png"
+                          alt="Image Slideshow" />
+                      </div>
+                    </div>
+                    <div class="slide slide4">
+                      <div class="slide-left">
+                        <div class="slide-titles">
+                          <h2 class="title-slide">F8 Trên Youtube</h2>
+                        </div>
+                        <div class="slide-txt">
+                          <span class="text-slide"
+                            >F8 được nhắc tới ở mọi nơi, ở đâu có cơ hội việc
+                            làm cho nghề IT và có những con người yêu thích lập
+                            trình F8 sẽ ở đó.</span
+                          >
+                        </div>
+                        <div class="slide-links">
+                          <a class="link-slide" href="#"> Truy cập kênh </a>
+                        </div>
+                      </div>
+                      <div class="slide-right">
+                        <img
+                          src="./view/assets/image/slide4.png"
+                          alt="Image Slideshow" />
+                      </div>
+                    </div>
+                    <div class="slide slide5">
+                      <div class="slide-left">
+                        <div class="slide-titles">
+                          <h2 class="title-slide">F8 Trên Facebook</h2>
+                        </div>
+                        <div class="slide-txt">
+                          <span class="text-slide">
+                            F8 được nhắc tới ở mọi nơi, ở đâu có cơ hội việc làm
+                            cho nghề IT và có những con người yêu thích lập
+                            trình F8 sẽ ở đó.
+                          </span>
+                        </div>
+                        <div class="slide-links">
+                          <a class="link-slide" href="#"> Truy Cập Facebook </a>
+                        </div>
+                      </div>
+                      <div class="slide-right">
+                        <img
+                          src="./view/assets/image/slide5.png"
+                          alt="Image Slideshow" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <span class="control prev"
+                  ><i class="fa-solid fa-angle-left"></i
+                ></span>
+                <span class="control next"
+                  ><i class="fa-solid fa-angle-right"></i
+                ></span>
+                <div class="pagination">
+                  <button class="page-button"></button>
+                  <button class="page-button"></button>
+                  <button class="page-button"></button>
+                  <button class="page-button"></button>
+                  <button class="page-button"></button>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Wrapper Content Main -->
+          <div class="wrapper-content">
+            <!-- Pro  Course -->
+            <section class="pro-courses">
+              <div class="title-heading-pro-course title-heading">
+                <h2>Khóa học Pro <sup> Mới </sup></h2>
+              </div>
+              <div class="list-items">
+                <div class="item-course">
+                  <figure class="course-item">
+                    <img
+                      src="./view/assets/image/htmlcsspro.png"
+                      alt="HTML, CSS Pro" />
+                    <figcaption>
+                      <div class="img-pro-course">
+                        <img
+                          src="./view/assets/image/kingpro.svg"
+                          alt="Fee Course" />
+                      </div>
+                      <div class="des-course-item">
+                        <a class="view-course" href="#"> Xem khóa học </a>
+                      </div>
+                    </figcaption>
+                  </figure>
+                  <a class="title-course" href="#">HTML, CSS Pro</a>
+                  <span class="price-course">
+                    <del>2.500.000đ</del> 1.299.000đ
+                  </span>
+                </div>
+
+                <div class="item-course">
+                  <figure class="course-item">
+                    <img
+                      src="./view/assets/image/sass.png"
+                      alt="HTML, CSS Pro" />
+                    <figcaption>
+                      <div class="img-pro-course">
+                        <img
+                          src="./view/assets/image/kingpro.svg"
+                          alt="Fee Course" />
+                      </div>
+                      <div class="des-course-item">
+                        <a class="view-course" href="#"> Xem khóa học </a>
+                      </div>
+                    </figcaption>
+                  </figure>
+                  <a class="title-course" href="#">Ngôn ngữ tiền xử lý Sass</a>
+                  <span class="price-course">
+                    <del>400.000đ</del> 299.000đ
+                  </span>
+                </div>
+
+                <div class="item-course">
+                  <figure class="course-item">
+                    <img
+                      src="./view/assets/image/javascriptpro.png"
+                      alt="HTML, CSS Pro" />
+                    <figcaption>
+                      <div class="img-pro-course">
+                        <img
+                          src="./view/assets/image/kingpro.svg"
+                          alt="Fee Course" />
+                      </div>
+                      <div class="des-course-item">
+                        <a class="view-course" href="#"> Xem khóa học </a>
+                      </div>
+                    </figcaption>
+                  </figure>
+                  <a class="title-course" href="#">Javascript Pro</a>
+                  <span class="price-course">
+                    <del></del>
+                  </span>
+                </div>
+
+                <div class="item-course">
+                  <figure class="course-item">
+                    <img
+                      src="./view/assets/image/nextjspro.png"
+                      alt="HTML, CSS Pro" />
+                    <figcaption>
+                      <div class="img-pro-course">
+                        <img
+                          src="./view/assets/image/kingpro.svg"
+                          alt="Fee Course" />
+                      </div>
+                      <div class="des-course-item">
+                        <a class="view-course" href="#"> Xem khóa học </a>
+                      </div>
+                    </figcaption>
+                  </figure>
+                  <a class="title-course" href="#">NextJS Pro</a>
+                  <span class="price-course">
+                    <del></del>
+                  </span>
+                </div>
+              </div>
+            </section>
+
+            <!-- Free Course -->
+            <section class="free-courses">
+              <p class="count-viewer">
+                <span class="counter">362.253+</span> người khác đã học
+              </p>
+              <div class="title-heading-free-course title-heading">
+                <h2>Khóa học miễn phí</h2>
+                <div class="read-more">
+                  <a class="read-all" href="#">
+                    Xem lộ trình
+                    <i class="fa fa-angle-right"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="list-items">
+                <div class="item-course">
+                  <figure class="course-item">
+                    <img
+                      src="./view/assets/image/kienthucnentang.png"
+                      alt="HTML, CSS Pro" />
+                    <figcaption>
+                      <div class="des-course-item">
+                        <a class="view-course" href="#"> Xem khóa học </a>
+                      </div>
+                    </figcaption>
+                  </figure>
+                  <a class="title-course" href="#">Kiến thức nhập môn IT</a>
+                  <span class="viewer">
+                    <i class="fa-solid fa-users"></i> 119.557
+                  </span>
+                </div>
+
+                <div class="item-course">
+                  <figure class="course-item">
+                    <img
+                      src="./view/assets/image/cppcobannangcao.png"
+                      alt="HTML, CSS Pro" />
+                    <figcaption>
+                      <div class="des-course-item">
+                        <a class="view-course" href="#"> Xem khóa học </a>
+                      </div>
+                    </figcaption>
+                  </figure>
+                  <a class="title-course" href="#"
+                    >Lập trình C++ cơ bản, nâng cao</a
+                  >
+                  <span class="viewer">
+                    <i class="fa-solid fa-users"></i> 19.280
+                  </span>
+                </div>
+
+                <div class="item-course">
+                  <figure class="course-item">
+                    <img
+                      src="./view/assets/image/htmlcsszerohero.png"
+                      alt="HTML, CSS Pro" />
+                    <figcaption>
+                      <div class="des-course-item">
+                        <a class="view-course" href="#"> Xem khóa học </a>
+                      </div>
+                    </figcaption>
+                  </figure>
+                  <a class="title-course" href="#"
+                    >HTML, CSS từ Zero đến Hero</a
+                  >
+                  <span class="viewer">
+                    <i class="fa-solid fa-users"></i> 179.257
+                  </span>
+                </div>
+
+                <div class="item-course">
+                  <figure class="course-item">
+                    <img
+                      src="./view/assets/image/responsivegridsystem.png"
+                      alt="HTML, CSS Pro" />
+                    <figcaption>
+                      <div class="des-course-item">
+                        <a class="view-course" href="#"> Xem khóa học </a>
+                      </div>
+                    </figcaption>
+                  </figure>
+                  <a class="title-course" href="#"
+                    >Responsive với Grid System</a
+                  >
+                  <span class="viewer">
+                    <i class="fa-solid fa-users"></i> 40.685
+                  </span>
+                </div>
+
+                <div class="item-course">
+                  <figure class="course-item">
+                    <img
+                      src="./view/assets/image/javascriptcoban.png"
+                      alt="HTML, CSS Pro" />
+                    <figcaption>
+                      <div class="des-course-item">
+                        <a class="view-course" href="#"> Xem khóa học </a>
+                      </div>
+                    </figcaption>
+                  </figure>
+                  <a class="title-course" href="#"
+                    >Lập trình Javascript cơ bản</a
+                  >
+                  <span class="viewer">
+                    <i class="fa-solid fa-users"></i> 121.503
+                  </span>
+                </div>
+
+                <div class="item-course">
+                  <figure class="course-item">
+                    <img
+                      src="./view/assets/image/javascirptnangcao.png"
+                      alt="HTML, CSS Pro" />
+                    <figcaption>
+                      <div class="des-course-item">
+                        <a class="view-course" href="#"> Xem khóa học </a>
+                      </div>
+                    </figcaption>
+                  </figure>
+                  <a class="title-course" href="#"
+                    >Lập trình Javascript nâng cao</a
+                  >
+                  <span class="viewer">
+                    <i class="fa-solid fa-users"></i> 33.034
+                  </span>
+                </div>
+
+                <div class="item-course">
+                  <figure class="course-item">
+                    <img
+                      src="./view/assets/image/wslubuntu.png"
+                      alt="HTML, CSS Pro" />
+                    <figcaption>
+                      <div class="des-course-item">
+                        <a class="view-course" href="#"> Xem khóa học </a>
+                      </div>
+                    </figcaption>
+                  </figure>
+                  <a class="title-course" href="#"
+                    >Làm việc với Terminal & Ubuntu</a
+                  >
+                  <span class="viewer">
+                    <i class="fa-solid fa-users"></i> 15.260
+                  </span>
+                </div>
+
+                <div class="item-course">
+                  <figure class="course-item">
+                    <img
+                      src="./view/assets/image/reactjs.png"
+                      alt="HTML, CSS Pro" />
+                    <figcaption>
+                      <div class="des-course-item">
+                        <a class="view-course" href="#"> Xem khóa học </a>
+                      </div>
+                    </figcaption>
+                  </figure>
+                  <a class="title-course" href="#"
+                    >Xây dựng Website với ReactJS</a
+                  >
+                  <span class="viewer">
+                    <i class="fa-solid fa-users"></i> 56.038
+                  </span>
+                </div>
+
+                <div class="item-course">
+                  <figure class="course-item">
+                    <img
+                      src="./view/assets/image/nodeexpressjs.png"
+                      alt="HTML, CSS Pro" />
+                    <figcaption>
+                      <div class="des-course-item">
+                        <a class="view-course" href="#"> Xem khóa học </a>
+                      </div>
+                    </figcaption>
+                  </figure>
+                  <a class="title-course" href="#">Node & ExpressJS</a>
+                  <span class="viewer">
+                    <i class="fa-solid fa-users"></i> 37.311
+                  </span>
+                </div>
+
+                <div class="item-course">
+                  <figure class="course-item">
+                    <img
+                      src="./view/assets/image/donttouchyourface.png"
+                      alt="HTML, CSS Pro" />
+                    <figcaption>
+                      <div class="des-course-item">
+                        <a class="view-course" href="#"> Xem khóa học </a>
+                      </div>
+                    </figcaption>
+                  </figure>
+                  <a class="title-course" href="#"
+                    >App "Đừng chạm tay lên mặt"</a
+                  >
+                  <span class="viewer">
+                    <i class="fa-solid fa-users"></i> 8.781
+                  </span>
+                </div>
+              </div>
+            </section>
+
+            <!-- Futured Article -->
+            <section class="futured-article">
+              <div class="title-heading-futered-article title-heading">
+                <h2>Bài viết nổi bật</h2>
+                <div class="read-more">
+                  <a class="read-all" href="#">
+                    Xem tất cả
+                    <i class="fa fa-angle-right"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="list-items">
+                <div class="item-course">
+                  <figure class="course-item">
+                    <img
+                      src="./view/assets/image/futuredarticle1.png"
+                      alt="HTML, CSS Pro" />
+                    <figcaption>
+                      <div class="des-course-item">
+                        <a class="view-course" href="#"> Xem bài viết </a>
+                      </div>
+                    </figcaption>
+                  </figure>
+                  <a class="title-course" href="#">
+                    Tổng hợp các sản phẩm của học viên tại F8
+                  </a>
+                  <div class="author">
+                    <figure>
+                      <img
+                        src="./view/assets/image/avatarauthor1.jpg"
+                        alt="Avatar Author" />
+                      <a class="name-author" href="#"> Sơn Đặng </a>
+                      <i class="fa-solid fa-check" style="color: #ffffff"></i>
+                      <figcaption>
+                        <span class="time-read">6 phút đọc</span>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+
+                <div class="item-course">
+                  <figure class="course-item">
+                    <img
+                      src="./view/assets/image/futuredarticle2.jpg"
+                      alt="HTML, CSS Pro" />
+                    <figcaption>
+                      <div class="des-course-item">
+                        <a class="view-course" href="#"> Xem bài viết </a>
+                      </div>
+                    </figcaption>
+                  </figure>
+                  <a class="title-course" href="#">
+                    [Phần 1] Tạo dự án ReactJS với Webpack và Babel
+                  </a>
+                  <div class="author">
+                    <figure>
+                      <img
+                        src="./view/assets/image/avatarauthor1.jpg"
+                        alt="Avatar Author" />
+                      <a class="name-author" href="#"> Sơn Đặng </a>
+                      <i class="fa-solid fa-check" style="color: #ffffff"></i>
+                      <figcaption>
+                        <span class="time-read">12 phút đọc</span>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </article>
+      </main>
+
+      <div class="body-form-login">
+        <div class="modal-login">
+          <button type="button">
+            <i class="fa-solid fa-xmark closeLogin"></i>
+          </button>
+          <div class="heading-form-login">
+            <img src="./view/assets/image/Logo.png" alt="Logo Website">
+            <h2 class="title-form-login">
+              Đăng ký tài khoản F8
+            </h2>
+            <p class="desc-form-login">
+              Mỗi người nên sử dụng một tài khoản, tài khoản nhiều người sử dụng chung có thể sẽ bị khóa
+            </p>
+          </div>
+          <form action="" method="get" onsubmit="submitFormSignup()">
+            <label for="username">
+              Tên đăng nhập của bạn
+            </label>
+            <input type="text" name="username" id="username">
+            <div class="signupPhone"></div>
+            <div class="signupEmail"></div>
+          </form>
+          <div class="role">
+            <span>
+              Việc bạn tiếp tục sử dụng trang web này đồng nghĩa bạn đồng ý với
+              <a href="#">
+                điều khoản sử dụng
+              </a>
+              của chúng tôi
+            </span>
+          </div>
+        </div>
+        </div>
+
+      <!-- Footer -->
+      <footer>
+        <div class="content-footer">
+          <!-- Footer top -->
+          <div class="footer-top">
+            <!-- Slogan -->
+            <div class="slogan content-column-footer">
+              <div class="footer-slogan title-footer">
+                <figure>
+                  <img src="./view/assets/image/Logo.png" alt="Logo Website" />
+                </figure>
+                <figcaption>
+                  <span class="txt-slogan"> Học lập trình để đi làm </span>
+                </figcaption>
+              </div>
+              <div class="footer-contact-list">
+                <ul>
+                  <li>
+                    <p>Điện thoại: 0246.329.1102</p>
+                  </li>
+                  <li>
+                    <p>Email: contact@fullstack.edu.vn</p>
+                  </li>
+                  <li>
+                    <p>
+                      Số 11D, lô A10, khu đô thị Nam Trung Yên, phường Yên Hòa,
+                      quận Cầu giấy, TP.Hà Nội
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer-protect">
+                <figure>
+                  <a href="#">
+                    <img
+                      src="./view/assets/image/dmca.png"
+                      alt="DMCA Protect" />
+                  </a>
+                </figure>
+              </div>
+            </div>
+
+            <!-- About us -->
+            <div class="about content-column-footer">
+              <div class="title-footer about-us">
+                <span>Về chúng tôi</span>
+              </div>
+              <nav class="list-about">
+                <ul>
+                  <li><a href="#">Giới thiệu</a></li>
+                  <li><a href="#">Liên hệ</a></li>
+                  <li><a href="#">Điều khoản</a></li>
+                  <li><a href="#">Bảo mật</a></li>
+                  <li><a href="#">Cơ hội việc làm</a></li>
+                </ul>
+              </nav>
+            </div>
+
+            <!-- Products -->
+            <div class="product content-column-footer">
+              <div class="title-footer product-type">
+                <span>Sản phẩm</span>
+              </div>
+              <nav class="list-product">
+                <ul>
+                  <li><a href="#">Game Nester</a></li>
+                  <li><a href="#">Game CSS Diner</a></li>
+                  <li><a href="#">Game CSS Selectors</a></li>
+                  <li><a href="#">Game Froggy</a></li>
+                  <li><a href="#">Game Froggy Pro</a></li>
+                  <li><a href="#">Game Scoops</a></li>
+                </ul>
+              </nav>
+            </div>
+
+            <!-- Tools -->
+            <div class="tools content-column-footer">
+              <div class="title-footer tools-type">
+                <span>Tin tức - Blog</span>
+              </div>
+              <nav class="list-tools">
+                <ul>
+                  <li><a href="#">Tạo CV xin việc</a></li>
+                  <li><a href="#">Rút gọn liên kết</a></li>
+                  <li><a href="#">Clip-path marker</a></li>
+                  <li><a href="#">Snippets generator</a></li>
+                  <li><a href="#">CSS Grid generator</a></li>
+                  <li><a href="#">Cảnh báo sờ tay lên mặt</a></li>
+                </ul>
+              </nav>
+            </div>
+
+            <!-- Company -->
+            <div class="company content-column-footer">
+              <div class="title-footer company-type">
+                <span>Công ty cổ phần công nghệ giáo dục F8</span>
+              </div>
+              <nav class="list-company">
+                <ul>
+                  <li>
+                    <p href="#">Mã số thuế: <span>0109922901</span></p>
+                  </li>
+                  <li>
+                    <p href="#">Ngày thành lập: <span>04/03/2022</span></p>
+                  </li>
+                  <li>
+                    <p href="#">
+                      Lĩnh vực:
+                      <span
+                        >Công nghệ, giáo dục, lập trình. F8 xây dựng và phát
+                        triển những sản phẩm mang lại giá trị cho cộng đồng
+                      </span>
+                    </p>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+
+          <!-- Footer bottom -->
+          <div class="footer-bottom">
+            <div class="copyright">
+              <p>© 2018 - 2023 F8. Nền tảng học lập trình hàng đầu Việt Nam</p>
+            </div>
+            <div class="social-media">
+              <!-- <img src="/images/icons/facebook.svg" alt="" />
+              <img src="/images/icons/instagram.svg" alt="" />
+              <img src="/images/icons/twitter.svg" alt="" />
+              <img src="/images/icons/linkedin.svg" alt="" /> -->
+            </div>
+          </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- Javascript -->
+    <script src="./view/assets/javascript/sidebar.js"></script>
+    <script src="./view/assets/javascript/slider.js"></script>
+    <script src="./view/assets/javascript/formsearch.js"></script>
+    <script src="./view/assets/javascript/formlogin.js"></script>
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/3e006365dd.js"
+      crossorigin="anonymous"></script>
+
+    <!-- Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"></script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

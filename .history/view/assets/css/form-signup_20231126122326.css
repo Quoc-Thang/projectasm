@@ -1,0 +1,25 @@
+.formSignup {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.formSignup label {
+  font-size: 14px;
+  color: #375689;
+  font-weight: bold !important;
+}
+
+.fullname {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contentSignup {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  flex-direction: row;
+}

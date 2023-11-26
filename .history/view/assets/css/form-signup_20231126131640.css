@@ -1,0 +1,131 @@
+:root {
+  --primary-color: #f05123;
+  --background-color: #fff;
+  --border-bottom: #e8ebed;
+  --border-color: #1473e6;
+  --background-hover: #f5f5f5;
+  --border: #e8e8e8;
+  --color-txt: #000;
+  --background-color-menu: #f0f0f0;
+}
+
+.formSignup {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.formSignup label {
+  font-size: 14px;
+  color: var(--color-txt);
+  font-weight: 600;
+}
+
+.formSignup input {
+  height: 42px;
+  width: 100%;
+  border-radius: 20px;
+  font-size: 16px;
+  padding-left: 16px;
+  border: 1px solid var(--border-bottom);
+  background-color: var(--background-hover);
+  outline: none;
+}
+
+.fullname {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.signupPhone,
+.signupEmail {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.headingSignup {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.signupWithEmail,
+.signupWithPhone {
+  font-size: 12px;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.contentSignup {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.secondContentSignup {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.secondContentSignup button {
+  position: absolute;
+  right: 0;
+  height: 42px;
+  width: 40%;
+  border-radius: 20px;
+  color: #757575;
+  background-color: #ccc;
+  font-size: 12px;
+  border: 0;
+  cursor: no-drop;
+}
+
+.firstContentSignupPhone {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.secondContentSignupPhone {
+  display: flex;
+  flex-direction: row;
+}
+
+#countryPhone {
+  position: absolute;
+  height: 42px;
+  width: 25%;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  padding: 0 10px;
+  font-size: 14px;
+  font-weight: 500;
+  background-color: var(--background-hover);
+  border: 1px solid var(--border-bottom);
+}
+
+#phoneNumber {
+  padding-left: 110px;
+}
+
+.firstContentSignupEmail {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.btn-submit button {
+  background: linear-gradient(70.06deg, #2cccff -5%, #22dfbf 106%);
+  width: 100%;
+  height: 42px;
+  border: 0;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--background-color-menu);
+}
