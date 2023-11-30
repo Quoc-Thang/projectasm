@@ -10,25 +10,9 @@
 }
 
 .comeback {
-  padding-left: 10px;
   display: flex;
   align-items: center;
-  gap: 5px;
-  opacity: 0.8;
-  font-size: 12px;
-}
-
-.fa-chevron-left {
-  transition: all 0.3s linear;
-}
-
-.comeback:hover .fa-chevron-left {
-  transform: translateX(-5px);
-}
-
-.comeback a {
-  color: var(--color-txt);
-  text-transform: uppercase;
+  gap: 30px;
 }
 
 .intro-course {
@@ -239,7 +223,6 @@
   color: var(--background-color);
   border-radius: 26px;
   font-size: 16px;
-  text-transform: uppercase;
 }
 
 .list-intro-course {
