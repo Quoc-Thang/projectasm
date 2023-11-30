@@ -193,7 +193,7 @@
 }
 
 .second-intro-video-course {
-  width: calc(100% - 150px);
+  width: calc(100% - 30px);
   margin: 0 auto;
 }
 
@@ -205,27 +205,10 @@
   font-weight: 400;
 }
 
-.learn-now {
-  width: 100%;
-  text-align: center;
-  padding: 10px 0;
-}
-
 .learn-now a {
-  padding: 8px 24px;
-  background-color: var(--primary-color);
-  color: var(--background-color);
-  border-radius: 26px;
-  font-size: 16px;
+  padding: 10px 12px;
 }
 
 .list-intro-course {
   width: calc(100% - 25px);
-  padding-top: 10px;
-}
-
-.list-intro-course li {
-  display: flex;
-  gap: 20px;
-  align-items: center;
 }

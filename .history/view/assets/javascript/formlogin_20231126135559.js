@@ -239,6 +239,6 @@ openForm.addEventListener("click", () => {
 document.body.addEventListener("click", (event) => {
   if (event.target.matches(".close") || event.target.matches(".body-form")) {
     const modalForm = document.querySelector(".body-form");
-    modalForm.parentNode.removeChild(modalForm);
+    modalLogin.parentNode.removeChild(modalLogin);
   }
 });

@@ -193,7 +193,7 @@
 }
 
 .second-intro-video-course {
-  width: calc(100% - 150px);
+  width: calc(100% - 60px);
   margin: 0 auto;
 }
 
@@ -221,11 +221,4 @@
 
 .list-intro-course {
   width: calc(100% - 25px);
-  padding-top: 10px;
-}
-
-.list-intro-course li {
-  display: flex;
-  gap: 20px;
-  align-items: center;
 }
