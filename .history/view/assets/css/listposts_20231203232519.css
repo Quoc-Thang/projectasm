@@ -1,0 +1,25 @@
+.featured-article {
+  height: 100%;
+  width: 100%;
+}
+
+.heading-fearured-article {
+  width: 100%;
+  padding-bottom: 40px;
+}
+
+.title-featured-article h4 {
+  font-size: 26px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.desc-featured-article span {
+  font-size: 15px;
+}
+
+.main-featured-article {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}

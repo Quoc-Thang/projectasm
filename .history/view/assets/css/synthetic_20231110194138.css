@@ -30,7 +30,7 @@ article {
   min-width: 100vh;
 }
 
-#wrapper {
+.wrapper {
   width: 100%;
 }
 
