@@ -283,6 +283,7 @@ const formLogin = `      <div class="body-form body-form-Login">
     text-decoration: underline;
     color: var(--color-txt);
   }
+  
 </style>`;
 
 openForm.addEventListener("click", () => {

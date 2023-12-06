@@ -49,8 +49,6 @@ const formLogin = `      <div class="body-form body-form-Login">
         </a>
       </li>
     </ul>
-  </div>
-  <div class="login-with-password">
     <div class="signupPhone" style="display: block;">
       <div class="headingSignup">
         <label for="phoneNumber">
@@ -80,7 +78,7 @@ const formLogin = `      <div class="body-form body-form-Login">
         </div>
       </div>
     </div>
-    <div class="signupEmail" style="display: none;">
+<div class="signupEmail" style="display: none;">
       <div class="headingSignup">
         <label for="phoneNumber">
           Email

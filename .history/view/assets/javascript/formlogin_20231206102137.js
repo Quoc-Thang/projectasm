@@ -52,56 +52,56 @@ const formLogin = `      <div class="body-form body-form-Login">
   </div>
   <div class="login-with-password">
     <div class="signupPhone" style="display: block;">
-      <div class="headingSignup">
-        <label for="phoneNumber">
-          Số điện thoại
-        </label>
-        <span class="signupWithEmail">
-          Đăng ký với email
-        </span>
+    <div class="headingSignup">
+      <label for="phoneNumber">
+        Số điện thoại
+      </label>
+      <span class="signupWithEmail">
+        Đăng ký với email
+      </span>
+    </div>
+    <div class="contentSignup">
+      <div class="firstContentSignup firstContentSignupPhone">
+        <select name="countryPhone" id="countryPhone">
+          <option value="VN +84">
+            VN +84
+          </option>
+          <option value="QT +00">
+            QT +00
+          </option>
+        </select>
+        <input type="text" name="phoneNumber" id="phoneNumber" placeholder="Số điện thoại">
       </div>
-      <div class="contentSignup">
-        <div class="firstContentSignup firstContentSignupPhone">
-          <select name="countryPhone" id="countryPhone">
-            <option value="VN +84">
-              VN +84
-            </option>
-            <option value="QT +00">
-              QT +00
-            </option>
-          </select>
-          <input type="text" name="phoneNumber" id="phoneNumber" placeholder="Số điện thoại">
-        </div>
-        <div class="secondContentSignup">
-          <input type="text" name="codePhoneNumber" id="codePhoneNumber" placeholder="Nhập mã xác nhận">
-          <button class="sendCode" type="button" onclick="sendCode()" disabled="">
-            Gửi mã
-          </button>
-        </div>
+      <div class="secondContentSignup">
+        <input type="text" name="codePhoneNumber" id="codePhoneNumber" placeholder="Nhập mã xác nhận">
+        <button class="sendCode" type="button" onclick="sendCode()" disabled="">
+          Gửi mã
+        </button>
       </div>
     </div>
-    <div class="signupEmail" style="display: none;">
-      <div class="headingSignup">
-        <label for="phoneNumber">
-          Email
-        </label>
-        <span class="signupWithPhone">
-          Đăng ký với SĐT
-        </span>
+  </div>
+  <div class="signupEmail" style="display: none;">
+    <div class="headingSignup">
+      <label for="phoneNumber">
+        Email
+      </label>
+      <span class="signupWithPhone">
+        Đăng ký với SĐT
+      </span>
+    </div>
+    <div class="contentSignup">
+      <div class="firstContentSignup firstContentSignupEmail">
+        <input type="email" name="emailSignup" id="emailSignup" placeholder="Địa chỉ email">
+        <input type="password" name="passwordSingup" id="passwordSignup" placeholder="Mật khẩu">
       </div>
-      <div class="contentSignup">
-        <div class="firstContentSignup firstContentSignupEmail">
-          <input type="email" name="emailSignup" id="emailSignup" placeholder="Địa chỉ email">
-          <input type="password" name="passwordSingup" id="passwordSignup" placeholder="Mật khẩu">
-        </div>
-        <div class="secondContentSignup">
-          <input type="text" name="codeEmail" id="codeEmail" placeholder="Nhập mã xác nhận">
-          <button class="sendCode" type="button" onclick="sendCode()">
-            Gửi mã
-          </button>
-        </div>
+      <div class="secondContentSignup">
+        <input type="text" name="codeEmail" id="codeEmail" placeholder="Nhập mã xác nhận">
+        <button class="sendCode" type="button" onclick="sendCode()">
+          Gửi mã
+        </button>
       </div>
     </div>
+  </div>
   </div>
   <div class="role">
     <span>
