@@ -1,0 +1,37 @@
+.payment {
+  width: 100%;
+  height: 100%;
+  background-color: #272a31;
+  color: #dae4f0;
+  display: flex;
+  flex-direction: row;
+}
+
+.left-payment {
+  width: 30%;
+  height: 100%;
+  padding: 20px 28px;
+}
+
+.heading-time-countdown h4 {
+  font-size: 18px;
+}
+
+.loading-payment {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.dot {
+  background-color: #dae4f0;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+}
+
+.right-payment {
+  width: 70%;
+  height: 100%;
+  padding: 8px 40px;
+}
